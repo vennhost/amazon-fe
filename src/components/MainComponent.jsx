@@ -1,6 +1,8 @@
 import React from "react";
-import { } from "reactstrap";
+import { Container } from "reactstrap";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import NavBar from "./MainNav";
+import Home from "./Home"
 
 
 class MainComponent extends React.Component {
@@ -10,7 +12,12 @@ class MainComponent extends React.Component {
 
             <>
                 <Router>
-                    <div><h1>My React App</h1></div>
+
+                    <NavBar />
+                    <div>
+                        <Route path="/" exact component={Home} />
+                        {/* <Route path="/profile" component={ProfilePage} /> */}
+                    </div>
 
                 </Router>
             </>
