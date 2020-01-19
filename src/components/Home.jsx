@@ -18,13 +18,13 @@ class Home extends React.Component {
                 <Card>
                   <CardBody>
                     <CardTitle>{product.name}</CardTitle>
-                    <CardSubtitle>{product.brand}</CardSubtitle>
+                    <CardSubtitle>Brand: {product.brand}</CardSubtitle>
                   </CardBody>
                   <img width="100%" src={product.imageurl} alt="Product Image" />
                   <CardBody>
                     <CardText>{product.decription}</CardText>
-                    <CardLink href="#">{product.category}</CardLink>
-                    <CardLink href="#">${product.price}</CardLink>
+                    <CardLink href="#">Category: {product.category}</CardLink>
+                    <CardText>${product.price}</CardText>
                   </CardBody>
                 </Card>
                 </Col>
